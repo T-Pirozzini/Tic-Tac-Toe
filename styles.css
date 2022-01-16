@@ -1,0 +1,123 @@
+body {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;  
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+  margin: 0px;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 80px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;  
+  grid-gap: 10px;
+  width: auto;
+  height: auto;   
+}
+
+/* BORDERS */
+.box {
+  border: 2px solid cornflowerblue;
+  width: 200px;
+  height: 200px;  
+}
+
+.one, .two, .three {
+  border-top: 0px;
+}
+
+.seven, .eight, .nine {
+  border-bottom: 0px;
+}
+
+.one, .four, .seven {
+  border-left: 0px;
+}
+
+.three, .six, .nine {
+  border-right: 0px;
+}
+
+.o {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150px;  
+  color: darkmagenta;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.x {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150px;  
+  color: chartreuse;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+/* CSS */
+.reset {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 50px;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 150px;
+}
+
+.reset:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.reset:main,
+.reset:focus {
+  user-select: auto;
+}
+
+.reset:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+.reset:disabled {
+  cursor: auto;
+}
