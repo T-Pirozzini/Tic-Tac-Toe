@@ -44,6 +44,7 @@ h1 {
   border-right: 0px;
 }
 
+/* X's & O's */
 .o {
   display: flex;
   justify-content: center;
@@ -62,7 +63,12 @@ h1 {
   font-family: 'Shadows Into Light', cursive;
 }
 
-/* CSS */
+footer {
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* CSS - RESET BTN */
 .reset {
   appearance: button;
   background-color: #1899D6;

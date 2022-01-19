@@ -1,0 +1,165 @@
+*, *::before, *::after {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+  margin: 0px;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 80px;
+}
+
+.gameboard {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(3, auto);    
+  grid-gap: 10px;
+  width: auto;
+  height: auto;   
+}
+
+/* BORDERS */
+.box {
+  border: 2px solid cornflowerblue;
+  width: 200px;
+  height: 200px;    
+}
+
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(3)
+ {
+  border-top: none;
+}
+
+.box:nth-child(7),
+.box:nth-child(8),
+.box:nth-child(9)
+ {
+  border-bottom: none;
+}
+
+.box:nth-child(1),
+.box:nth-child(4),
+.box:nth-child(7)
+ {
+  border-left: none;
+}
+
+.box:nth-child(3),
+.box:nth-child(6),
+.box:nth-child(9)
+ {
+  border-right: none;
+}
+
+.box:hover {
+  cursor: pointer;
+  transform: scale(1.02);  
+}
+
+
+/* X's & O's */
+.o {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150px;  
+  color: darkmagenta;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.x {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150px;  
+  color: chartreuse;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.subtext {
+  font-size: 25px;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.player-name {
+  font-weight: 800;
+}
+
+footer {
+  font-size: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+
+/* CSS - RESET BTN */
+.reset {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 50px;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 150px;
+}
+
+.reset:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.reset:main,
+.reset:focus {
+  user-select: auto;
+}
+
+.reset:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+.reset:disabled {
+  cursor: auto;
+}
