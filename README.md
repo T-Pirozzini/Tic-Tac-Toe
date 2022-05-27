@@ -5,7 +5,7 @@ This demo is version #4.
 #### HTML/CSS/JS
 
 ## :video_camera: Live Demo
-<a href="https://t-pirozzini.github.io/tictactoe/">Click Here!</a>
+<a href="https://t-pirozzini.github.io/tic-tac-toe/">Click Here!</a>
 
 ## :camera: Screenshot
 Home
