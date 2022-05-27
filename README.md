@@ -5,10 +5,10 @@ This demo is version #4.
 #### HTML/CSS/JS
 
 ## :video_camera: Live Demo
-<a href="">Click Here!</a>
+<a href="https://t-pirozzini.github.io/tictactoe/">Click Here!</a>
 
 ## :camera: Screenshot
 Home
-![Home]()
+![Home](https://github.com/T-Pirozzini/tictactoe/blob/main/assets/home.png?raw=true)
 
 ## Odin Project Course Content
