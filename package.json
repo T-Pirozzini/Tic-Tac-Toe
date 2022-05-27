@@ -1,24 +1,6 @@
 {
-  "name": "tictactoe",
-  "description": "Honing my HTML/CSS/JS Skills - A simple Tic-Tac-Toe web app!\r I created multiple versions of this application (check out the code).\r This demo is version #4.\r #### HTML/CSS/JS",
-  "version": "1.0.0",
-  "devDependencies": {
+  "dependencies": {
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/T-Pirozzini/tictactoe.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/T-Pirozzini/tictactoe/issues"
-  },
-  "homepage": "https://github.com/T-Pirozzini/tictactoe#readme"
+  }
 }
